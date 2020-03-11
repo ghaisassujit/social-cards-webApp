@@ -1,5 +1,6 @@
 # social-cards-webApp
 This is a sample react learning project created using create-react-app package.
+Ref: https://create-react-app.dev/docs/getting-started.
 
 The application uses following
 1. React js for UI
