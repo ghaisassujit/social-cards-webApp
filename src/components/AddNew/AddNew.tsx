@@ -8,32 +8,7 @@ import {StyledFormWrapper} from "./AddNew.styled";
 export const AddNew = ({story, addStory}: AddNewProps) => {
     const history = useHistory();
     const [newStory, setStory] = useState(story);
-    // const handleChange = (e: { target: { name: string; value: string; }; }) => {
-    //     let tempStory = {...newStory};
-    //     if(e.target.name === 'title'){
-    //         tempStory.title = e.target.value
-    //     }
-    //     else if(e.target.name === 'author'){
-    //         tempStory.author = e.target.value
-    //     }
-    //     else if(e.target.name === 'title'){
-    //         tempStory.content = e.target.value
-    //     }
-    //     setStory(tempStory);
-    // };
-
-    // const handleSubmit = (e: { preventDefault: () => void; }) => {
-    //     let isValid: boolean = true;
-
-    //     if(isValid){
-    //         story.createdDate = new Date().toDateString();
-    //         return true;
-    //     }else{
-    //         e.preventDefault();
-    //         return false;
-    //     }
-    // }
-
+    
     return(<StyledFormWrapper>
         <h1>Share Your Story</h1>
         <Formik
@@ -78,22 +53,4 @@ export const AddNew = ({story, addStory}: AddNewProps) => {
             </Form>
         )}
     /></StyledFormWrapper>)
-
-    // return (<form><div>
-    //     <h1>Add New</h1>
-    //     <div>
-    //         <label>Title</label>
-    //         <input name="title" type="text" value={newStory.title} onChange={handleChange}/>
-    //     </div>
-    //     <div>
-    //         <label>Your Name</label>
-    //         <input name="author" type="text" value={newStory.author} onChange={handleChange}/>
-    //     </div>
-    //     <div>
-    //         <label>Your Story</label>
-    //         <textarea name="content" onChange={handleChange}>{newStory.content}</textarea>
-    //         {/* <input name="content" type="textarea" value={newStory.content}/> */}
-    //     </div>
-    //     <button type="submit">Submit</button>
-    // </div></form>)
 };
