@@ -13,3 +13,5 @@ Idea of the project is to create a web application which lets anonymous(anyone o
 The application is still in progress and for now has 2 pages:
 1. Stories (List)
 2. Share Your Story (Add Story)
+
+The application has no unit tests written for the moment but is the next logical step in application development.
